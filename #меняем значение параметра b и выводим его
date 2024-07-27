@@ -1,0 +1,14 @@
+def print_params(a=1, b=str, c=True):   #создаем функцию с тремя значениями разных типов
+    print(a, b, c)  #выводим эти значения
+
+
+print_params(b=25)      #меняем значение параметра b и выводим его
+print_params(c=[1,2,3,])        #меняем значение параметра c и выводим его
+
+values_list = ['CAPYBARA', 1, False]    #создаем 'список' с тремя элементами разных типов
+values_dict = {'a': 4, 'b': str, 'c': True}     #создаем 'словарь' с тремя элементами разных типов
+
+# print_params(*values_list, **values_dict)
+
+values_list_2 = [54.32, 'Строка' ]
+print_params(*values_list_2, 42)
